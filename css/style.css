@@ -1,0 +1,146 @@
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body {
+  height: 100vh;
+  background: #124;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Tahoma;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 15px
+}
+
+.watch {
+  background: rgba(255, 255, 255, .3);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  color: #fac800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: blod;
+  font-size: 30px;
+  margin: auto;
+  border: 5px solid rgba(11, 94, 215, 1);
+}
+
+.watch span {
+  margin: 0 5px;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+.main{
+  width: calc(90% / 2); 
+}
+
+.control {
+  background: rgba(255, 255, 255, .3);
+  padding: 10px 5px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 1px;
+  width: 100%
+}
+
+.control span {
+  background: rgba(11, 94, 215, 1);
+  color: #fff;
+  font-weight: 900;
+  padding: 5px;
+  letter-spacing: 2px;
+  border: 3px solid #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.stop-area {
+  background: rgba(255, 255, 255, .3);
+  padding: 10px;
+  border-radius: 1rem;
+  height: 250px;
+  overflow: scroll;
+  width: calc(90% / 2);
+}
+
+.stop-area .stop {
+  background: rgba(11, 94, 215, .7);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.stop-area .stop::before {
+  content: "";
+  background: #fff;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  top: 0;
+  width: 50px;
+  color: rgba(11, 94, 215, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.rm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: indianred;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+
+}
+
+@media(max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+.main{
+  width: 100%;
+}
+  .stop-area {
+    width: 100%;
+  }
+}
